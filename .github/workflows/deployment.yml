@@ -1,10 +1,6 @@
 name: Simple Push Workflow
 
-on:
-  push:
-    branches:
-      - main   # runs only when pushing to 'main' branch (change if needed)
-
+on: [push, workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
